@@ -1,0 +1,23 @@
+#footer {
+    color: $white;
+
+    .title,
+    .subtitle {
+        color: $white;
+        font-weight: 600;
+    }
+
+    .copyright {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    p:not(.copyright) {
+        max-width: 390px;
+        margin-bottom: 20px;
+    }
+
+    a:hover {
+        color: white;
+    }
+}

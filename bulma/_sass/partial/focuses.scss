@@ -1,0 +1,7 @@
+#focuses {
+    @include desktop {
+        .title span {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+#instagram {
+    .title {
+        font-weight: $weight-bold;
+    }
+
+    .circle {
+        background-color: $purple;
+        width: 184px;
+        height: 184px;
+        padding: $size-5;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include touch {
+        .title {
+            font-size: 25px;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    strong {
+        font-weight: $weight-semibold;
+    }
+}

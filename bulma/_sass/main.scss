@@ -1,0 +1,313 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Beyond Infinity - Demo';
+    src: url('../fonts/BeyondInfinity.woff2') format('woff2'),
+        url('../fonts/BeyondInfinity.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import '../node_modules/bulma/sass/utilities/initial-variables';
+
+$blue: #3fc1c9;
+$blue-invert: #fff;
+$purple: #131241;
+
+//fonts
+$family-sans-serif: 'Lora', 'Arial', sans-serif;
+$family-primary: 'Montserrat';
+$family-secondary: 'Beyond Infinity - Demo';
+$weight-bold: 900;
+$weight-semibold: 700;
+
+//text
+$body-family: $family-sans-serif;
+$body-color: $purple;
+$strong-color: $purple;
+$body-font-size: 16px;
+
+//primary
+$primary: $blue;
+$primary-invert: $blue-invert;
+$primary-light: rgba($primary, 0.2);
+
+//titles
+$title-color: $purple;
+$title-family: $family-primary;
+$title-size: 106px;
+
+//misc
+$radius: 0;
+$transition: all 0.15s ease-in-out;
+
+//buttons
+$button-family: $family-primary;
+$button-padding-vertical: 28px;
+$button-padding-horizontal: 36px;
+
+//navbar
+$navbar-item-color: $purple;
+$navbar-item-active-color: $primary;
+$navbar-item-hover-background-color: transparent;
+
+//footer
+$footer-background-color: $purple;
+$footer-padding: 5rem 1.5rem 1rem 1.5rem;
+
+//section
+$section-padding: 5rem 1.5rem;
+
+//card
+$card-background-color: $primary-light;
+$card-shadow: none;
+$card-content-padding: 30px;
+$card-footer-padding: 0 30px 30px 30px;
+$card-footer-border-top: none;
+$card-color: $purple;
+
+//box
+$box-shadow: none;
+$box-radius: 0;
+
+//input
+$input-border-color: $primary;
+
+input {
+    @extend .input;
+    height: 80px !important;
+}
+
+@import '../node_modules/bulma/bulma';
+@import './partial/bulma-card.scss';
+@import './partial/custom-video.scss';
+
+//home
+@import './partial/hero.scss';
+@import './partial/price-cards.scss';
+@import './partial/instagram.scss';
+
+//about
+@import './partial/focuses.scss';
+
+//services
+@import './partial/services.scss';
+
+//footer
+@import './partial/footer.scss';
+
+a {
+    transition: $transition;
+
+    &.is-purple:hover {
+        color: #17173c;
+    }
+}
+
+.title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-weight: $weight-bold;
+}
+
+.title.is-2 {
+    font-size: 64px;
+}
+
+.title.is-3 {
+    font-size: 51px;
+}
+
+.title.is-4 {
+    font-size: 34px;
+}
+
+.title.is-5 {
+    font-size: 24px;
+}
+
+.navbar {
+    font-family: $family-primary;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &-item {
+        padding-left: 1.5rem;
+    }
+
+    @include touch {
+        &-end {
+            padding-bottom: .75rem;
+        }
+
+        &-item {
+            padding-right: 1.5rem;
+        }
+    }
+}
+
+img.logo {
+    max-height: unset;
+}
+
+.subtitled {
+    position: relative;
+
+    > span {
+        position: absolute;
+        font-size: 120px;
+        font-weight: 100;
+        font-family: $family-secondary;
+        text-transform: none;
+        color: $primary;
+
+        &.is-small {
+            font-size: 88px;
+        }
+    }
+
+    &-up > span {
+        margin-top: -4.2rem;
+
+        &.is-small:not(.upper) {
+            margin-top: -1rem;
+        }
+    }
+
+    &:not(.subtitled-up) {
+        margin-bottom: 3rem;
+        > span {
+            bottom: -5rem;
+        }
+    }
+}
+
+.button {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.mb-auto {
+    margin-bottom: auto;
+}
+
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.is-purple {
+    color: $purple;
+}
+
+.has-gap-bottom {
+    margin-bottom: $size-1 !important;
+}
+
+.has-background-primary-light {
+    background-color: $primary-light;
+}
+
+.is-normal {
+    text-transform: none;
+}
+
+.title-secondary {
+    font-size: 120px;
+    color: $primary;
+    font-family: $family-secondary;
+}
+
+.button.is-larger {
+    padding-top: 34px;
+    padding-bottom: 34px;
+}
+
+.p {
+    margin-bottom: $size-6;
+}
+
+@include touch {
+    .title,
+    .title-secondary {
+        font-size: 60px;
+    }
+
+    .title.is-2 {
+        font-size: 45px;
+    }
+
+    .title.is-3 {
+        font-size: 30px;
+    }
+
+    .title.is-4 {
+        font-size: 25px;
+    }
+
+    .title.is-5 {
+        font-size: 20px;
+    }
+
+    .subtitled {
+        > span {
+            font-size: 60px;
+
+            &.is-small {
+                font-size: 50px;
+            }
+        }
+
+        &-up > span {
+            margin-top: -2.5rem;
+
+            &.is-small:not(.upper) {
+                margin-top: -0.5rem;
+            }
+        }
+
+        &:not(.subtitled-up) {
+            > span {
+                bottom: -3rem;
+            }
+        }
+    }
+
+    .card-pre-title {
+        font-size: 30px;
+    }
+
+    #menu .button {
+        width: 100%;
+    }
+}
+
+@include widescreen {
+    .wider {
+        position: relative;
+        z-index: 145;
+
+        &-left {
+            margin-left: -60px;
+            margin-bottom: -60px;
+        }
+
+        &-right {
+            margin-right: -60px;
+        }
+    }
+}
+
+.navbar-burger {
+    margin-right: 1rem;
+}
