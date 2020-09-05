@@ -1,6 +1,5 @@
 .custom-video {
     position: relative;
-    z-index: -1;
 
     &-button {
         position: absolute;
@@ -12,4 +11,8 @@
         cursor: pointer;
         z-index: 100;
     }
+}
+
+.fixz {
+    z-index: 105;
 }

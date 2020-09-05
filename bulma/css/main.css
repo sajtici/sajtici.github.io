@@ -7192,8 +7192,7 @@ label.panel-block {
     object-position: center; }
 
 .custom-video {
-  position: relative;
-  z-index: -1; }
+  position: relative; }
   .custom-video-button {
     position: absolute;
     width: 50px;
@@ -7203,6 +7202,9 @@ label.panel-block {
     transform: translate(-50%, -50%);
     cursor: pointer;
     z-index: 100; }
+
+.fixz {
+  z-index: 105; }
 
 .hero .title {
   max-width: 530px; }
