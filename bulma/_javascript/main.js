@@ -48,7 +48,7 @@ const getIgColumn = (item) => `<div class="column is-4-desktop is-6-touch">
 
 const container = document.querySelector('[data-instagram="true"]');
 
-if (container.dataset.instagramid)
+if (container && container.dataset.instagramid)
     getIgPosts('logan.chiro').then((data) => {
         for (let i = 0; i < 6; i++)
             container.insertAdjacentHTML('afterbegin', getIgColumn(data[i]));

@@ -52,7 +52,7 @@ var getIgColumn = function getIgColumn(item) {
 
 var container = document.querySelector('[data-instagram="true"]');
 
-if (container.dataset.instagramid) getIgPosts('logan.chiro').then(function (data) {
+if (container && container.dataset.instagramid) getIgPosts('logan.chiro').then(function (data) {
     for (var i = 0; i < 6; i++) {
         container.insertAdjacentHTML('afterbegin', getIgColumn(data[i]));
     }
