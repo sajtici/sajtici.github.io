@@ -73,29 +73,44 @@ $box-radius: 0;
 
 //input
 $input-border-color: $primary;
+$label-color: $purple;
 
-input {
+//site size
+$fullhd: 1496px;
+
+input,
+select {
     @extend .input;
     height: 80px !important;
+    padding: 25px !important;
+}
+textarea {
+    @extend .input;
+    padding: 25px !important;
 }
 
 @import '../node_modules/bulma/bulma';
 @import './partial/bulma-card.scss';
 @import './partial/custom-video.scss';
+@import './partial/placeholder.scss';
 
 //home
-@import './partial/hero.scss';
-@import './partial/price-cards.scss';
-@import './partial/instagram.scss';
+@import './partial/section-hero.scss';
+@import './partial/section-price-cards.scss';
+@import './partial/section-instagram.scss';
+@import './partial/section-video.scss';
 
 //about
-@import './partial/focuses.scss';
+@import './partial/section-focuses.scss';
 
 //services
-@import './partial/services.scss';
+@import './partial/section-services.scss';
 
 //footer
-@import './partial/footer.scss';
+@import './partial/section-footer.scss';
+
+//booking
+@import './partial/section-booking.scss';
 
 a {
     transition: $transition;
@@ -143,7 +158,7 @@ h6 {
 
     @include touch {
         &-end {
-            padding-bottom: .75rem;
+            padding-bottom: 0.75rem;
         }
 
         &-item {
@@ -310,4 +325,34 @@ img.logo {
 
 .navbar-burger {
     margin-right: 1rem;
+}
+
+.field-label {
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.hours .item {
+    display: flex;
+
+    .day {
+        width: 100px;
+    }
+
+    .day,
+    .hour {
+        font-family: $family-primary;
+        font-weight: $weight-semibold;
+        font-size: 24px;
+    }
+
+    .hour {
+        color: $primary;
+    }
+}
+
+select {
+    background-repeat: no-repeat;
+    background-position: calc(100% - 25px) center;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='DarkTurquoise' width='36' height='36' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
 }

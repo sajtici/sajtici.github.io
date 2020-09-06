@@ -15,7 +15,7 @@ $pre-title-spacing: 3rem;
         padding-top: $pre-title-spacing;
 
         @include desktop {
-            padding-left: $pre-title-spacing * 1.5;
+            padding-left: $pre-title-spacing + 0.5;
         }
     }
 
@@ -31,7 +31,7 @@ $pre-title-spacing: 3rem;
         text-align: left;
         font-family: $family-primary;
         font-size: 34px;
-        max-width: 340px;
+        max-width: 380px;
         font-weight: $weight-bold;
         position: relative;
         top: -$pre-title-spacing;

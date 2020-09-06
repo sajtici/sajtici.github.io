@@ -1,0 +1,23 @@
+#video {
+    .spine-image {
+        width: 150px;
+        top: -20rem;
+        left: 20rem;
+        position: absolute;
+    }
+
+    @include widescreen {
+        &.home-video {
+            margin-bottom: 100px;
+        }
+    }
+
+    .spine-image {
+        @include desktop-only {
+            display: none;
+        }
+        @include touch {
+            display: none;
+        }
+    }
+}

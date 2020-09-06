@@ -5,8 +5,13 @@
   font-style: normal;
   font-display: swap; }
 
-input {
-  height: 80px !important; }
+input,
+select {
+  height: 80px !important;
+  padding: 25px !important; }
+
+textarea {
+  padding: 25px !important; }
 
 /*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
@@ -142,7 +147,8 @@ input {
   right: 0;
   top: 0; }
 
-.button, .input, input, .textarea, .select select, .file-cta,
+.button, .input, input,
+select, textarea, .textarea, .select select, .file-cta,
 .file-name, .pagination-previous,
 .pagination-next,
 .pagination-link,
@@ -164,25 +170,30 @@ input {
   padding-top: calc(0.5em - 1px);
   position: relative;
   vertical-align: top; }
-  .button:focus, .input:focus, input:focus, .textarea:focus, .select select:focus, .file-cta:focus,
+  .button:focus, .input:focus, input:focus,
+  select:focus, textarea:focus, .textarea:focus, .file-cta:focus,
   .file-name:focus, .pagination-previous:focus,
   .pagination-next:focus,
   .pagination-link:focus,
-  .pagination-ellipsis:focus, .is-focused.button, .is-focused.input, input.is-focused, .is-focused.textarea, .select select.is-focused, .is-focused.file-cta,
+  .pagination-ellipsis:focus, .is-focused.button, .is-focused.input, input.is-focused,
+  select.is-focused, textarea.is-focused, .is-focused.textarea, .is-focused.file-cta,
   .is-focused.file-name, .is-focused.pagination-previous,
   .is-focused.pagination-next,
   .is-focused.pagination-link,
-  .is-focused.pagination-ellipsis, .button:active, .input:active, input:active, .textarea:active, .select select:active, .file-cta:active,
+  .is-focused.pagination-ellipsis, .button:active, .input:active, input:active,
+  select:active, textarea:active, .textarea:active, .file-cta:active,
   .file-name:active, .pagination-previous:active,
   .pagination-next:active,
   .pagination-link:active,
-  .pagination-ellipsis:active, .is-active.button, .is-active.input, input.is-active, .is-active.textarea, .select select.is-active, .is-active.file-cta,
+  .pagination-ellipsis:active, .is-active.button, .is-active.input, input.is-active,
+  select.is-active, textarea.is-active, .is-active.textarea, .is-active.file-cta,
   .is-active.file-name, .is-active.pagination-previous,
   .is-active.pagination-next,
   .is-active.pagination-link,
   .is-active.pagination-ellipsis {
     outline: none; }
-  .button[disabled], .input[disabled], input[disabled], .textarea[disabled], .select select[disabled], .file-cta[disabled],
+  .button[disabled], .input[disabled], input[disabled],
+  select[disabled], textarea[disabled], .textarea[disabled], .file-cta[disabled],
   .file-name[disabled], .pagination-previous[disabled],
   .pagination-next[disabled],
   .pagination-link[disabled],
@@ -190,9 +201,9 @@ input {
   fieldset[disabled] .button,
   fieldset[disabled] .input,
   fieldset[disabled] input,
+  fieldset[disabled] select,
+  fieldset[disabled] textarea,
   fieldset[disabled] .textarea,
-  fieldset[disabled] .select select,
-  .select fieldset[disabled] select,
   fieldset[disabled] .file-cta,
   fieldset[disabled] .file-name,
   fieldset[disabled] .pagination-previous,
@@ -495,7 +506,7 @@ table th {
   .is-size-7-widescreen {
     font-size: 0.75rem !important; } }
 
-@media screen and (min-width: 1408px) {
+@media screen and (min-width: 1496px) {
   .is-size-1-fullhd {
     font-size: 3rem !important; }
   .is-size-2-fullhd {
@@ -551,11 +562,11 @@ table th {
   .has-text-centered-widescreen {
     text-align: center !important; } }
 
-@media screen and (min-width: 1216px) and (max-width: 1407px) {
+@media screen and (min-width: 1216px) and (max-width: 1495px) {
   .has-text-centered-widescreen-only {
     text-align: center !important; } }
 
-@media screen and (min-width: 1408px) {
+@media screen and (min-width: 1496px) {
   .has-text-centered-fullhd {
     text-align: center !important; } }
 
@@ -587,11 +598,11 @@ table th {
   .has-text-justified-widescreen {
     text-align: justify !important; } }
 
-@media screen and (min-width: 1216px) and (max-width: 1407px) {
+@media screen and (min-width: 1216px) and (max-width: 1495px) {
   .has-text-justified-widescreen-only {
     text-align: justify !important; } }
 
-@media screen and (min-width: 1408px) {
+@media screen and (min-width: 1496px) {
   .has-text-justified-fullhd {
     text-align: justify !important; } }
 
@@ -623,11 +634,11 @@ table th {
   .has-text-left-widescreen {
     text-align: left !important; } }
 
-@media screen and (min-width: 1216px) and (max-width: 1407px) {
+@media screen and (min-width: 1216px) and (max-width: 1495px) {
   .has-text-left-widescreen-only {
     text-align: left !important; } }
 
-@media screen and (min-width: 1408px) {
+@media screen and (min-width: 1496px) {
   .has-text-left-fullhd {
     text-align: left !important; } }
 
@@ -659,11 +670,11 @@ table th {
   .has-text-right-widescreen {
     text-align: right !important; } }
 
-@media screen and (min-width: 1216px) and (max-width: 1407px) {
+@media screen and (min-width: 1216px) and (max-width: 1495px) {
   .has-text-right-widescreen-only {
     text-align: right !important; } }
 
-@media screen and (min-width: 1408px) {
+@media screen and (min-width: 1496px) {
   .has-text-right-fullhd {
     text-align: right !important; } }
 
@@ -884,11 +895,11 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   .is-block-widescreen {
     display: block !important; } }
 
-@media screen and (min-width: 1216px) and (max-width: 1407px) {
+@media screen and (min-width: 1216px) and (max-width: 1495px) {
   .is-block-widescreen-only {
     display: block !important; } }
 
-@media screen and (min-width: 1408px) {
+@media screen and (min-width: 1496px) {
   .is-block-fullhd {
     display: block !important; } }
 
@@ -923,11 +934,11 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   .is-flex-widescreen {
     display: flex !important; } }
 
-@media screen and (min-width: 1216px) and (max-width: 1407px) {
+@media screen and (min-width: 1216px) and (max-width: 1495px) {
   .is-flex-widescreen-only {
     display: flex !important; } }
 
-@media screen and (min-width: 1408px) {
+@media screen and (min-width: 1496px) {
   .is-flex-fullhd {
     display: flex !important; } }
 
@@ -962,11 +973,11 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   .is-inline-widescreen {
     display: inline !important; } }
 
-@media screen and (min-width: 1216px) and (max-width: 1407px) {
+@media screen and (min-width: 1216px) and (max-width: 1495px) {
   .is-inline-widescreen-only {
     display: inline !important; } }
 
-@media screen and (min-width: 1408px) {
+@media screen and (min-width: 1496px) {
   .is-inline-fullhd {
     display: inline !important; } }
 
@@ -1001,11 +1012,11 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   .is-inline-block-widescreen {
     display: inline-block !important; } }
 
-@media screen and (min-width: 1216px) and (max-width: 1407px) {
+@media screen and (min-width: 1216px) and (max-width: 1495px) {
   .is-inline-block-widescreen-only {
     display: inline-block !important; } }
 
-@media screen and (min-width: 1408px) {
+@media screen and (min-width: 1496px) {
   .is-inline-block-fullhd {
     display: inline-block !important; } }
 
@@ -1040,11 +1051,11 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   .is-inline-flex-widescreen {
     display: inline-flex !important; } }
 
-@media screen and (min-width: 1216px) and (max-width: 1407px) {
+@media screen and (min-width: 1216px) and (max-width: 1495px) {
   .is-inline-flex-widescreen-only {
     display: inline-flex !important; } }
 
-@media screen and (min-width: 1408px) {
+@media screen and (min-width: 1496px) {
   .is-inline-flex-fullhd {
     display: inline-flex !important; } }
 
@@ -1089,11 +1100,11 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   .is-hidden-widescreen {
     display: none !important; } }
 
-@media screen and (min-width: 1216px) and (max-width: 1407px) {
+@media screen and (min-width: 1216px) and (max-width: 1495px) {
   .is-hidden-widescreen-only {
     display: none !important; } }
 
-@media screen and (min-width: 1408px) {
+@media screen and (min-width: 1496px) {
   .is-hidden-fullhd {
     display: none !important; } }
 
@@ -1128,11 +1139,11 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   .is-invisible-widescreen {
     visibility: hidden !important; } }
 
-@media screen and (min-width: 1216px) and (max-width: 1407px) {
+@media screen and (min-width: 1216px) and (max-width: 1495px) {
   .is-invisible-widescreen-only {
     visibility: hidden !important; } }
 
-@media screen and (min-width: 1408px) {
+@media screen and (min-width: 1496px) {
   .is-invisible-fullhd {
     visibility: hidden !important; } }
 
@@ -2068,15 +2079,15 @@ a.box:active {
   @media screen and (max-width: 1215px) {
     .container.is-widescreen {
       max-width: 1152px; } }
-  @media screen and (max-width: 1407px) {
+  @media screen and (max-width: 1495px) {
     .container.is-fullhd {
-      max-width: 1344px; } }
+      max-width: 1432px; } }
   @media screen and (min-width: 1216px) {
     .container {
       max-width: 1152px; } }
-  @media screen and (min-width: 1408px) {
+  @media screen and (min-width: 1496px) {
     .container {
-      max-width: 1344px; } }
+      max-width: 1432px; } }
 
 .content li + li {
   margin-top: 0.25em; }
@@ -2896,129 +2907,204 @@ a.tag:hover {
   text-align: center;
   vertical-align: top; }
 
-.input, input, .textarea, .select select {
+.input, input,
+select, textarea, .textarea, .select select {
   background-color: white;
   border-color: #3fc1c9;
   border-radius: 0;
   color: #363636; }
-  .input::-moz-placeholder, input::-moz-placeholder, .textarea::-moz-placeholder, .select select::-moz-placeholder {
+  .input::-moz-placeholder, input::-moz-placeholder,
+  select::-moz-placeholder, textarea::-moz-placeholder, .textarea::-moz-placeholder, .select select::-moz-placeholder {
     color: rgba(54, 54, 54, 0.3); }
-  .input::-webkit-input-placeholder, input::-webkit-input-placeholder, .textarea::-webkit-input-placeholder, .select select::-webkit-input-placeholder {
+  .input::-webkit-input-placeholder, input::-webkit-input-placeholder,
+  select::-webkit-input-placeholder, textarea::-webkit-input-placeholder, .textarea::-webkit-input-placeholder, .select select::-webkit-input-placeholder {
     color: rgba(54, 54, 54, 0.3); }
-  .input:-moz-placeholder, input:-moz-placeholder, .textarea:-moz-placeholder, .select select:-moz-placeholder {
+  .input:-moz-placeholder, input:-moz-placeholder,
+  select:-moz-placeholder, textarea:-moz-placeholder, .textarea:-moz-placeholder {
     color: rgba(54, 54, 54, 0.3); }
-  .input:-ms-input-placeholder, input:-ms-input-placeholder, .textarea:-ms-input-placeholder, .select select:-ms-input-placeholder {
+  .input:-ms-input-placeholder, input:-ms-input-placeholder,
+  select:-ms-input-placeholder, textarea:-ms-input-placeholder, .textarea:-ms-input-placeholder {
     color: rgba(54, 54, 54, 0.3); }
-  .input:hover, input:hover, .textarea:hover, .select select:hover, .is-hovered.input, input.is-hovered, .is-hovered.textarea, .select select.is-hovered {
+  .input:hover, input:hover,
+  select:hover, textarea:hover, .textarea:hover, .is-hovered.input, input.is-hovered,
+  select.is-hovered, textarea.is-hovered, .is-hovered.textarea {
     border-color: #b5b5b5; }
-  .input:focus, input:focus, .textarea:focus, .select select:focus, .is-focused.input, input.is-focused, .is-focused.textarea, .select select.is-focused, .input:active, input:active, .textarea:active, .select select:active, .is-active.input, input.is-active, .is-active.textarea, .select select.is-active {
+  .input:focus, input:focus,
+  select:focus, textarea:focus, .textarea:focus, .is-focused.input, input.is-focused,
+  select.is-focused, textarea.is-focused, .is-focused.textarea, .input:active, input:active,
+  select:active, textarea:active, .textarea:active, .is-active.input, input.is-active,
+  select.is-active, textarea.is-active, .is-active.textarea {
     border-color: #3fc1c9;
     box-shadow: 0 0 0 0.125em rgba(63, 193, 201, 0.25); }
-  .input[disabled], input[disabled], .textarea[disabled], .select select[disabled],
+  .input[disabled], input[disabled],
+  select[disabled], textarea[disabled], .textarea[disabled],
   fieldset[disabled] .input,
   fieldset[disabled] input,
-  fieldset[disabled] .textarea,
-  fieldset[disabled] .select select,
-  .select fieldset[disabled] select {
+  fieldset[disabled] select,
+  fieldset[disabled] textarea,
+  fieldset[disabled] .textarea {
     background-color: whitesmoke;
     border-color: whitesmoke;
     box-shadow: none;
     color: #7a7a7a; }
-    .input[disabled]::-moz-placeholder, input[disabled]::-moz-placeholder, .textarea[disabled]::-moz-placeholder, .select select[disabled]::-moz-placeholder,
+    .input[disabled]::-moz-placeholder, input[disabled]::-moz-placeholder,
+    select[disabled]::-moz-placeholder, textarea[disabled]::-moz-placeholder, .textarea[disabled]::-moz-placeholder,
     fieldset[disabled] .input::-moz-placeholder,
     fieldset[disabled] input::-moz-placeholder,
-    fieldset[disabled] .textarea::-moz-placeholder,
-    fieldset[disabled] .select select::-moz-placeholder,
-    .select fieldset[disabled] select::-moz-placeholder {
+    fieldset[disabled] select::-moz-placeholder,
+    fieldset[disabled] textarea::-moz-placeholder,
+    fieldset[disabled] .textarea::-moz-placeholder {
       color: rgba(122, 122, 122, 0.3); }
-    .input[disabled]::-webkit-input-placeholder, input[disabled]::-webkit-input-placeholder, .textarea[disabled]::-webkit-input-placeholder, .select select[disabled]::-webkit-input-placeholder,
+    .input[disabled]::-webkit-input-placeholder, input[disabled]::-webkit-input-placeholder,
+    select[disabled]::-webkit-input-placeholder, textarea[disabled]::-webkit-input-placeholder, .textarea[disabled]::-webkit-input-placeholder,
     fieldset[disabled] .input::-webkit-input-placeholder,
     fieldset[disabled] input::-webkit-input-placeholder,
-    fieldset[disabled] .textarea::-webkit-input-placeholder,
-    fieldset[disabled] .select select::-webkit-input-placeholder,
-    .select fieldset[disabled] select::-webkit-input-placeholder {
+    fieldset[disabled] select::-webkit-input-placeholder,
+    fieldset[disabled] textarea::-webkit-input-placeholder,
+    fieldset[disabled] .textarea::-webkit-input-placeholder {
       color: rgba(122, 122, 122, 0.3); }
-    .input[disabled]:-moz-placeholder, input[disabled]:-moz-placeholder, .textarea[disabled]:-moz-placeholder, .select select[disabled]:-moz-placeholder,
+    .input[disabled]:-moz-placeholder, input[disabled]:-moz-placeholder,
+    select[disabled]:-moz-placeholder, textarea[disabled]:-moz-placeholder, .textarea[disabled]:-moz-placeholder,
     fieldset[disabled] .input:-moz-placeholder,
     fieldset[disabled] input:-moz-placeholder,
-    fieldset[disabled] .textarea:-moz-placeholder,
-    fieldset[disabled] .select select:-moz-placeholder,
-    .select fieldset[disabled] select:-moz-placeholder {
+    fieldset[disabled] select:-moz-placeholder,
+    fieldset[disabled] textarea:-moz-placeholder,
+    fieldset[disabled] .textarea:-moz-placeholder {
       color: rgba(122, 122, 122, 0.3); }
-    .input[disabled]:-ms-input-placeholder, input[disabled]:-ms-input-placeholder, .textarea[disabled]:-ms-input-placeholder, .select select[disabled]:-ms-input-placeholder,
+    .input[disabled]:-ms-input-placeholder, input[disabled]:-ms-input-placeholder,
+    select[disabled]:-ms-input-placeholder, textarea[disabled]:-ms-input-placeholder, .textarea[disabled]:-ms-input-placeholder,
     fieldset[disabled] .input:-ms-input-placeholder,
     fieldset[disabled] input:-ms-input-placeholder,
-    fieldset[disabled] .textarea:-ms-input-placeholder,
-    fieldset[disabled] .select select:-ms-input-placeholder,
-    .select fieldset[disabled] select:-ms-input-placeholder {
+    fieldset[disabled] select:-ms-input-placeholder,
+    fieldset[disabled] textarea:-ms-input-placeholder,
+    fieldset[disabled] .textarea:-ms-input-placeholder {
       color: rgba(122, 122, 122, 0.3); }
 
-.input, input, .textarea {
+.input, input,
+select, textarea, .textarea {
   box-shadow: inset 0 0.0625em 0.125em rgba(10, 10, 10, 0.05);
   max-width: 100%;
   width: 100%; }
-  .input[readonly], input[readonly], .textarea[readonly] {
+  .input[readonly], input[readonly],
+  select[readonly], textarea[readonly], .textarea[readonly] {
     box-shadow: none; }
-  .is-white.input, input.is-white, .is-white.textarea {
+  .is-white.input, input.is-white,
+  select.is-white, textarea.is-white, .is-white.textarea {
     border-color: white; }
-    .is-white.input:focus, input.is-white:focus, .is-white.textarea:focus, .is-white.is-focused.input, input.is-white.is-focused, .is-white.is-focused.textarea, .is-white.input:active, input.is-white:active, .is-white.textarea:active, .is-white.is-active.input, input.is-white.is-active, .is-white.is-active.textarea {
+    .is-white.input:focus, input.is-white:focus,
+    select.is-white:focus, textarea.is-white:focus, .is-white.textarea:focus, .is-white.is-focused.input, input.is-white.is-focused,
+    select.is-white.is-focused, textarea.is-white.is-focused, .is-white.is-focused.textarea, .is-white.input:active, input.is-white:active,
+    select.is-white:active, textarea.is-white:active, .is-white.textarea:active, .is-white.is-active.input, input.is-white.is-active,
+    select.is-white.is-active, textarea.is-white.is-active, .is-white.is-active.textarea {
       box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25); }
-  .is-black.input, input.is-black, .is-black.textarea {
+  .is-black.input, input.is-black,
+  select.is-black, textarea.is-black, .is-black.textarea {
     border-color: #0a0a0a; }
-    .is-black.input:focus, input.is-black:focus, .is-black.textarea:focus, .is-black.is-focused.input, input.is-black.is-focused, .is-black.is-focused.textarea, .is-black.input:active, input.is-black:active, .is-black.textarea:active, .is-black.is-active.input, input.is-black.is-active, .is-black.is-active.textarea {
+    .is-black.input:focus, input.is-black:focus,
+    select.is-black:focus, textarea.is-black:focus, .is-black.textarea:focus, .is-black.is-focused.input, input.is-black.is-focused,
+    select.is-black.is-focused, textarea.is-black.is-focused, .is-black.is-focused.textarea, .is-black.input:active, input.is-black:active,
+    select.is-black:active, textarea.is-black:active, .is-black.textarea:active, .is-black.is-active.input, input.is-black.is-active,
+    select.is-black.is-active, textarea.is-black.is-active, .is-black.is-active.textarea {
       box-shadow: 0 0 0 0.125em rgba(10, 10, 10, 0.25); }
-  .is-light.input, input.is-light, .is-light.textarea {
+  .is-light.input, input.is-light,
+  select.is-light, textarea.is-light, .is-light.textarea {
     border-color: whitesmoke; }
-    .is-light.input:focus, input.is-light:focus, .is-light.textarea:focus, .is-light.is-focused.input, input.is-light.is-focused, .is-light.is-focused.textarea, .is-light.input:active, input.is-light:active, .is-light.textarea:active, .is-light.is-active.input, input.is-light.is-active, .is-light.is-active.textarea {
+    .is-light.input:focus, input.is-light:focus,
+    select.is-light:focus, textarea.is-light:focus, .is-light.textarea:focus, .is-light.is-focused.input, input.is-light.is-focused,
+    select.is-light.is-focused, textarea.is-light.is-focused, .is-light.is-focused.textarea, .is-light.input:active, input.is-light:active,
+    select.is-light:active, textarea.is-light:active, .is-light.textarea:active, .is-light.is-active.input, input.is-light.is-active,
+    select.is-light.is-active, textarea.is-light.is-active, .is-light.is-active.textarea {
       box-shadow: 0 0 0 0.125em rgba(245, 245, 245, 0.25); }
-  .is-dark.input, input.is-dark, .is-dark.textarea {
+  .is-dark.input, input.is-dark,
+  select.is-dark, textarea.is-dark, .is-dark.textarea {
     border-color: #363636; }
-    .is-dark.input:focus, input.is-dark:focus, .is-dark.textarea:focus, .is-dark.is-focused.input, input.is-dark.is-focused, .is-dark.is-focused.textarea, .is-dark.input:active, input.is-dark:active, .is-dark.textarea:active, .is-dark.is-active.input, input.is-dark.is-active, .is-dark.is-active.textarea {
+    .is-dark.input:focus, input.is-dark:focus,
+    select.is-dark:focus, textarea.is-dark:focus, .is-dark.textarea:focus, .is-dark.is-focused.input, input.is-dark.is-focused,
+    select.is-dark.is-focused, textarea.is-dark.is-focused, .is-dark.is-focused.textarea, .is-dark.input:active, input.is-dark:active,
+    select.is-dark:active, textarea.is-dark:active, .is-dark.textarea:active, .is-dark.is-active.input, input.is-dark.is-active,
+    select.is-dark.is-active, textarea.is-dark.is-active, .is-dark.is-active.textarea {
       box-shadow: 0 0 0 0.125em rgba(54, 54, 54, 0.25); }
-  .is-primary.input, input.is-primary, .is-primary.textarea {
+  .is-primary.input, input.is-primary,
+  select.is-primary, textarea.is-primary, .is-primary.textarea {
     border-color: #3fc1c9; }
-    .is-primary.input:focus, input.is-primary:focus, .is-primary.textarea:focus, .is-primary.is-focused.input, input.is-primary.is-focused, .is-primary.is-focused.textarea, .is-primary.input:active, input.is-primary:active, .is-primary.textarea:active, .is-primary.is-active.input, input.is-primary.is-active, .is-primary.is-active.textarea {
+    .is-primary.input:focus, input.is-primary:focus,
+    select.is-primary:focus, textarea.is-primary:focus, .is-primary.textarea:focus, .is-primary.is-focused.input, input.is-primary.is-focused,
+    select.is-primary.is-focused, textarea.is-primary.is-focused, .is-primary.is-focused.textarea, .is-primary.input:active, input.is-primary:active,
+    select.is-primary:active, textarea.is-primary:active, .is-primary.textarea:active, .is-primary.is-active.input, input.is-primary.is-active,
+    select.is-primary.is-active, textarea.is-primary.is-active, .is-primary.is-active.textarea {
       box-shadow: 0 0 0 0.125em rgba(63, 193, 201, 0.25); }
-  .is-link.input, input.is-link, .is-link.textarea {
+  .is-link.input, input.is-link,
+  select.is-link, textarea.is-link, .is-link.textarea {
     border-color: #3fc1c9; }
-    .is-link.input:focus, input.is-link:focus, .is-link.textarea:focus, .is-link.is-focused.input, input.is-link.is-focused, .is-link.is-focused.textarea, .is-link.input:active, input.is-link:active, .is-link.textarea:active, .is-link.is-active.input, input.is-link.is-active, .is-link.is-active.textarea {
+    .is-link.input:focus, input.is-link:focus,
+    select.is-link:focus, textarea.is-link:focus, .is-link.textarea:focus, .is-link.is-focused.input, input.is-link.is-focused,
+    select.is-link.is-focused, textarea.is-link.is-focused, .is-link.is-focused.textarea, .is-link.input:active, input.is-link:active,
+    select.is-link:active, textarea.is-link:active, .is-link.textarea:active, .is-link.is-active.input, input.is-link.is-active,
+    select.is-link.is-active, textarea.is-link.is-active, .is-link.is-active.textarea {
       box-shadow: 0 0 0 0.125em rgba(63, 193, 201, 0.25); }
-  .is-info.input, input.is-info, .is-info.textarea {
+  .is-info.input, input.is-info,
+  select.is-info, textarea.is-info, .is-info.textarea {
     border-color: #3298dc; }
-    .is-info.input:focus, input.is-info:focus, .is-info.textarea:focus, .is-info.is-focused.input, input.is-info.is-focused, .is-info.is-focused.textarea, .is-info.input:active, input.is-info:active, .is-info.textarea:active, .is-info.is-active.input, input.is-info.is-active, .is-info.is-active.textarea {
+    .is-info.input:focus, input.is-info:focus,
+    select.is-info:focus, textarea.is-info:focus, .is-info.textarea:focus, .is-info.is-focused.input, input.is-info.is-focused,
+    select.is-info.is-focused, textarea.is-info.is-focused, .is-info.is-focused.textarea, .is-info.input:active, input.is-info:active,
+    select.is-info:active, textarea.is-info:active, .is-info.textarea:active, .is-info.is-active.input, input.is-info.is-active,
+    select.is-info.is-active, textarea.is-info.is-active, .is-info.is-active.textarea {
       box-shadow: 0 0 0 0.125em rgba(50, 152, 220, 0.25); }
-  .is-success.input, input.is-success, .is-success.textarea {
+  .is-success.input, input.is-success,
+  select.is-success, textarea.is-success, .is-success.textarea {
     border-color: #48c774; }
-    .is-success.input:focus, input.is-success:focus, .is-success.textarea:focus, .is-success.is-focused.input, input.is-success.is-focused, .is-success.is-focused.textarea, .is-success.input:active, input.is-success:active, .is-success.textarea:active, .is-success.is-active.input, input.is-success.is-active, .is-success.is-active.textarea {
+    .is-success.input:focus, input.is-success:focus,
+    select.is-success:focus, textarea.is-success:focus, .is-success.textarea:focus, .is-success.is-focused.input, input.is-success.is-focused,
+    select.is-success.is-focused, textarea.is-success.is-focused, .is-success.is-focused.textarea, .is-success.input:active, input.is-success:active,
+    select.is-success:active, textarea.is-success:active, .is-success.textarea:active, .is-success.is-active.input, input.is-success.is-active,
+    select.is-success.is-active, textarea.is-success.is-active, .is-success.is-active.textarea {
       box-shadow: 0 0 0 0.125em rgba(72, 199, 116, 0.25); }
-  .is-warning.input, input.is-warning, .is-warning.textarea {
+  .is-warning.input, input.is-warning,
+  select.is-warning, textarea.is-warning, .is-warning.textarea {
     border-color: #ffdd57; }
-    .is-warning.input:focus, input.is-warning:focus, .is-warning.textarea:focus, .is-warning.is-focused.input, input.is-warning.is-focused, .is-warning.is-focused.textarea, .is-warning.input:active, input.is-warning:active, .is-warning.textarea:active, .is-warning.is-active.input, input.is-warning.is-active, .is-warning.is-active.textarea {
+    .is-warning.input:focus, input.is-warning:focus,
+    select.is-warning:focus, textarea.is-warning:focus, .is-warning.textarea:focus, .is-warning.is-focused.input, input.is-warning.is-focused,
+    select.is-warning.is-focused, textarea.is-warning.is-focused, .is-warning.is-focused.textarea, .is-warning.input:active, input.is-warning:active,
+    select.is-warning:active, textarea.is-warning:active, .is-warning.textarea:active, .is-warning.is-active.input, input.is-warning.is-active,
+    select.is-warning.is-active, textarea.is-warning.is-active, .is-warning.is-active.textarea {
       box-shadow: 0 0 0 0.125em rgba(255, 221, 87, 0.25); }
-  .is-danger.input, input.is-danger, .is-danger.textarea {
+  .is-danger.input, input.is-danger,
+  select.is-danger, textarea.is-danger, .is-danger.textarea {
     border-color: #f14668; }
-    .is-danger.input:focus, input.is-danger:focus, .is-danger.textarea:focus, .is-danger.is-focused.input, input.is-danger.is-focused, .is-danger.is-focused.textarea, .is-danger.input:active, input.is-danger:active, .is-danger.textarea:active, .is-danger.is-active.input, input.is-danger.is-active, .is-danger.is-active.textarea {
+    .is-danger.input:focus, input.is-danger:focus,
+    select.is-danger:focus, textarea.is-danger:focus, .is-danger.textarea:focus, .is-danger.is-focused.input, input.is-danger.is-focused,
+    select.is-danger.is-focused, textarea.is-danger.is-focused, .is-danger.is-focused.textarea, .is-danger.input:active, input.is-danger:active,
+    select.is-danger:active, textarea.is-danger:active, .is-danger.textarea:active, .is-danger.is-active.input, input.is-danger.is-active,
+    select.is-danger.is-active, textarea.is-danger.is-active, .is-danger.is-active.textarea {
       box-shadow: 0 0 0 0.125em rgba(241, 70, 104, 0.25); }
-  .is-small.input, input.is-small, .is-small.textarea {
+  .is-small.input, input.is-small,
+  select.is-small, textarea.is-small, .is-small.textarea {
     border-radius: 2px;
     font-size: 0.75rem; }
-  .is-medium.input, input.is-medium, .is-medium.textarea {
+  .is-medium.input, input.is-medium,
+  select.is-medium, textarea.is-medium, .is-medium.textarea {
     font-size: 1.25rem; }
-  .is-large.input, input.is-large, .is-large.textarea {
+  .is-large.input, input.is-large,
+  select.is-large, textarea.is-large, .is-large.textarea {
     font-size: 1.5rem; }
-  .is-fullwidth.input, input.is-fullwidth, .is-fullwidth.textarea {
+  .is-fullwidth.input, input.is-fullwidth,
+  select.is-fullwidth, textarea.is-fullwidth, .is-fullwidth.textarea {
     display: block;
     width: 100%; }
-  .is-inline.input, input.is-inline, .is-inline.textarea {
+  .is-inline.input, input.is-inline,
+  select.is-inline, textarea.is-inline, .is-inline.textarea {
     display: inline;
     width: auto; }
 
-.input.is-rounded, input.is-rounded {
+.input.is-rounded, input.is-rounded,
+select.is-rounded, textarea.is-rounded {
   border-radius: 290486px;
   padding-left: calc(calc(0.75em - 1px) + 0.375em);
   padding-right: calc(calc(0.75em - 1px) + 0.375em); }
 
-.input.is-static, input.is-static {
+.input.is-static, input.is-static,
+select.is-static, textarea.is-static {
   background-color: transparent;
   border-color: transparent;
   box-shadow: none;
@@ -3483,7 +3569,7 @@ a.tag:hover {
     font-size: 14px; }
 
 .label {
-  color: #363636;
+  color: #131241;
   display: block;
   font-size: 1rem;
   font-weight: 900; }
@@ -3532,37 +3618,55 @@ a.tag:hover {
   .field.has-addons .control:not(:first-child):not(:last-child) .button,
   .field.has-addons .control:not(:first-child):not(:last-child) .input,
   .field.has-addons .control:not(:first-child):not(:last-child) input,
+  .field.has-addons .control:not(:first-child):not(:last-child) select,
+  .field.has-addons .control:not(:first-child):not(:last-child) textarea,
   .field.has-addons .control:not(:first-child):not(:last-child) .select select {
     border-radius: 0; }
   .field.has-addons .control:first-child:not(:only-child) .button,
   .field.has-addons .control:first-child:not(:only-child) .input,
   .field.has-addons .control:first-child:not(:only-child) input,
+  .field.has-addons .control:first-child:not(:only-child) select,
+  .field.has-addons .control:first-child:not(:only-child) textarea,
   .field.has-addons .control:first-child:not(:only-child) .select select {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0; }
   .field.has-addons .control:last-child:not(:only-child) .button,
   .field.has-addons .control:last-child:not(:only-child) .input,
   .field.has-addons .control:last-child:not(:only-child) input,
+  .field.has-addons .control:last-child:not(:only-child) select,
+  .field.has-addons .control:last-child:not(:only-child) textarea,
   .field.has-addons .control:last-child:not(:only-child) .select select {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0; }
   .field.has-addons .control .button:not([disabled]):hover, .field.has-addons .control .button:not([disabled]).is-hovered,
   .field.has-addons .control .input:not([disabled]):hover,
   .field.has-addons .control input:not([disabled]):hover,
+  .field.has-addons .control select:not([disabled]):hover,
+  .field.has-addons .control textarea:not([disabled]):hover,
   .field.has-addons .control .input:not([disabled]).is-hovered,
   .field.has-addons .control input:not([disabled]).is-hovered,
+  .field.has-addons .control select:not([disabled]).is-hovered,
+  .field.has-addons .control textarea:not([disabled]).is-hovered,
   .field.has-addons .control .select select:not([disabled]):hover,
   .field.has-addons .control .select select:not([disabled]).is-hovered {
     z-index: 2; }
   .field.has-addons .control .button:not([disabled]):focus, .field.has-addons .control .button:not([disabled]).is-focused, .field.has-addons .control .button:not([disabled]):active, .field.has-addons .control .button:not([disabled]).is-active,
   .field.has-addons .control .input:not([disabled]):focus,
   .field.has-addons .control input:not([disabled]):focus,
+  .field.has-addons .control select:not([disabled]):focus,
+  .field.has-addons .control textarea:not([disabled]):focus,
   .field.has-addons .control .input:not([disabled]).is-focused,
   .field.has-addons .control input:not([disabled]).is-focused,
+  .field.has-addons .control select:not([disabled]).is-focused,
+  .field.has-addons .control textarea:not([disabled]).is-focused,
   .field.has-addons .control .input:not([disabled]):active,
   .field.has-addons .control input:not([disabled]):active,
+  .field.has-addons .control select:not([disabled]):active,
+  .field.has-addons .control textarea:not([disabled]):active,
   .field.has-addons .control .input:not([disabled]).is-active,
   .field.has-addons .control input:not([disabled]).is-active,
+  .field.has-addons .control select:not([disabled]).is-active,
+  .field.has-addons .control textarea:not([disabled]).is-active,
   .field.has-addons .control .select select:not([disabled]):focus,
   .field.has-addons .control .select select:not([disabled]).is-focused,
   .field.has-addons .control .select select:not([disabled]):active,
@@ -3571,12 +3675,20 @@ a.tag:hover {
     .field.has-addons .control .button:not([disabled]):focus:hover, .field.has-addons .control .button:not([disabled]).is-focused:hover, .field.has-addons .control .button:not([disabled]):active:hover, .field.has-addons .control .button:not([disabled]).is-active:hover,
     .field.has-addons .control .input:not([disabled]):focus:hover,
     .field.has-addons .control input:not([disabled]):focus:hover,
+    .field.has-addons .control select:not([disabled]):focus:hover,
+    .field.has-addons .control textarea:not([disabled]):focus:hover,
     .field.has-addons .control .input:not([disabled]).is-focused:hover,
     .field.has-addons .control input:not([disabled]).is-focused:hover,
+    .field.has-addons .control select:not([disabled]).is-focused:hover,
+    .field.has-addons .control textarea:not([disabled]).is-focused:hover,
     .field.has-addons .control .input:not([disabled]):active:hover,
     .field.has-addons .control input:not([disabled]):active:hover,
+    .field.has-addons .control select:not([disabled]):active:hover,
+    .field.has-addons .control textarea:not([disabled]):active:hover,
     .field.has-addons .control .input:not([disabled]).is-active:hover,
     .field.has-addons .control input:not([disabled]).is-active:hover,
+    .field.has-addons .control select:not([disabled]).is-active:hover,
+    .field.has-addons .control textarea:not([disabled]).is-active:hover,
     .field.has-addons .control .select select:not([disabled]):focus:hover,
     .field.has-addons .control .select select:not([disabled]).is-focused:hover,
     .field.has-addons .control .select select:not([disabled]):active:hover,
@@ -3671,20 +3783,20 @@ a.tag:hover {
   font-size: 1rem;
   position: relative;
   text-align: left; }
-  .control.has-icons-left .input:focus ~ .icon, .control.has-icons-left input:focus ~ .icon,
-  .control.has-icons-left .select:focus ~ .icon, .control.has-icons-right .input:focus ~ .icon, .control.has-icons-right input:focus ~ .icon,
+  .control.has-icons-left .input:focus ~ .icon, .control.has-icons-left input:focus ~ .icon, .control.has-icons-left select:focus ~ .icon, .control.has-icons-left textarea:focus ~ .icon,
+  .control.has-icons-left .select:focus ~ .icon, .control.has-icons-right .input:focus ~ .icon, .control.has-icons-right input:focus ~ .icon, .control.has-icons-right select:focus ~ .icon, .control.has-icons-right textarea:focus ~ .icon,
   .control.has-icons-right .select:focus ~ .icon {
     color: #4a4a4a; }
-  .control.has-icons-left .input.is-small ~ .icon, .control.has-icons-left input.is-small ~ .icon,
-  .control.has-icons-left .select.is-small ~ .icon, .control.has-icons-right .input.is-small ~ .icon, .control.has-icons-right input.is-small ~ .icon,
+  .control.has-icons-left .input.is-small ~ .icon, .control.has-icons-left input.is-small ~ .icon, .control.has-icons-left select.is-small ~ .icon, .control.has-icons-left textarea.is-small ~ .icon,
+  .control.has-icons-left .select.is-small ~ .icon, .control.has-icons-right .input.is-small ~ .icon, .control.has-icons-right input.is-small ~ .icon, .control.has-icons-right select.is-small ~ .icon, .control.has-icons-right textarea.is-small ~ .icon,
   .control.has-icons-right .select.is-small ~ .icon {
     font-size: 0.75rem; }
-  .control.has-icons-left .input.is-medium ~ .icon, .control.has-icons-left input.is-medium ~ .icon,
-  .control.has-icons-left .select.is-medium ~ .icon, .control.has-icons-right .input.is-medium ~ .icon, .control.has-icons-right input.is-medium ~ .icon,
+  .control.has-icons-left .input.is-medium ~ .icon, .control.has-icons-left input.is-medium ~ .icon, .control.has-icons-left select.is-medium ~ .icon, .control.has-icons-left textarea.is-medium ~ .icon,
+  .control.has-icons-left .select.is-medium ~ .icon, .control.has-icons-right .input.is-medium ~ .icon, .control.has-icons-right input.is-medium ~ .icon, .control.has-icons-right select.is-medium ~ .icon, .control.has-icons-right textarea.is-medium ~ .icon,
   .control.has-icons-right .select.is-medium ~ .icon {
     font-size: 1.25rem; }
-  .control.has-icons-left .input.is-large ~ .icon, .control.has-icons-left input.is-large ~ .icon,
-  .control.has-icons-left .select.is-large ~ .icon, .control.has-icons-right .input.is-large ~ .icon, .control.has-icons-right input.is-large ~ .icon,
+  .control.has-icons-left .input.is-large ~ .icon, .control.has-icons-left input.is-large ~ .icon, .control.has-icons-left select.is-large ~ .icon, .control.has-icons-left textarea.is-large ~ .icon,
+  .control.has-icons-left .select.is-large ~ .icon, .control.has-icons-right .input.is-large ~ .icon, .control.has-icons-right input.is-large ~ .icon, .control.has-icons-right select.is-large ~ .icon, .control.has-icons-right textarea.is-large ~ .icon,
   .control.has-icons-right .select.is-large ~ .icon {
     font-size: 1.5rem; }
   .control.has-icons-left .icon, .control.has-icons-right .icon {
@@ -3696,11 +3808,13 @@ a.tag:hover {
     width: 2.5em;
     z-index: 4; }
   .control.has-icons-left .input, .control.has-icons-left input,
+  .control.has-icons-left select, .control.has-icons-left textarea,
   .control.has-icons-left .select select {
     padding-left: 2.5em; }
   .control.has-icons-left .icon.is-left {
     left: 0; }
   .control.has-icons-right .input, .control.has-icons-right input,
+  .control.has-icons-right select, .control.has-icons-right textarea,
   .control.has-icons-right .select select {
     padding-right: 2.5em; }
   .control.has-icons-right .icon.is-right {
@@ -6142,7 +6256,7 @@ label.panel-block {
       width: 100%; }
     .column.is-offset-12-widescreen {
       margin-left: 100%; } }
-  @media screen and (min-width: 1408px) {
+  @media screen and (min-width: 1496px) {
     .column.is-narrow-fullhd {
       flex: none; }
     .column.is-full-fullhd {
@@ -6323,10 +6437,10 @@ label.panel-block {
   @media screen and (min-width: 1216px) {
     .columns.is-variable.is-0-widescreen {
       --columnGap: 0rem; } }
-  @media screen and (min-width: 1216px) and (max-width: 1407px) {
+  @media screen and (min-width: 1216px) and (max-width: 1495px) {
     .columns.is-variable.is-0-widescreen-only {
       --columnGap: 0rem; } }
-  @media screen and (min-width: 1408px) {
+  @media screen and (min-width: 1496px) {
     .columns.is-variable.is-0-fullhd {
       --columnGap: 0rem; } }
   .columns.is-variable.is-1 {
@@ -6352,10 +6466,10 @@ label.panel-block {
   @media screen and (min-width: 1216px) {
     .columns.is-variable.is-1-widescreen {
       --columnGap: 0.25rem; } }
-  @media screen and (min-width: 1216px) and (max-width: 1407px) {
+  @media screen and (min-width: 1216px) and (max-width: 1495px) {
     .columns.is-variable.is-1-widescreen-only {
       --columnGap: 0.25rem; } }
-  @media screen and (min-width: 1408px) {
+  @media screen and (min-width: 1496px) {
     .columns.is-variable.is-1-fullhd {
       --columnGap: 0.25rem; } }
   .columns.is-variable.is-2 {
@@ -6381,10 +6495,10 @@ label.panel-block {
   @media screen and (min-width: 1216px) {
     .columns.is-variable.is-2-widescreen {
       --columnGap: 0.5rem; } }
-  @media screen and (min-width: 1216px) and (max-width: 1407px) {
+  @media screen and (min-width: 1216px) and (max-width: 1495px) {
     .columns.is-variable.is-2-widescreen-only {
       --columnGap: 0.5rem; } }
-  @media screen and (min-width: 1408px) {
+  @media screen and (min-width: 1496px) {
     .columns.is-variable.is-2-fullhd {
       --columnGap: 0.5rem; } }
   .columns.is-variable.is-3 {
@@ -6410,10 +6524,10 @@ label.panel-block {
   @media screen and (min-width: 1216px) {
     .columns.is-variable.is-3-widescreen {
       --columnGap: 0.75rem; } }
-  @media screen and (min-width: 1216px) and (max-width: 1407px) {
+  @media screen and (min-width: 1216px) and (max-width: 1495px) {
     .columns.is-variable.is-3-widescreen-only {
       --columnGap: 0.75rem; } }
-  @media screen and (min-width: 1408px) {
+  @media screen and (min-width: 1496px) {
     .columns.is-variable.is-3-fullhd {
       --columnGap: 0.75rem; } }
   .columns.is-variable.is-4 {
@@ -6439,10 +6553,10 @@ label.panel-block {
   @media screen and (min-width: 1216px) {
     .columns.is-variable.is-4-widescreen {
       --columnGap: 1rem; } }
-  @media screen and (min-width: 1216px) and (max-width: 1407px) {
+  @media screen and (min-width: 1216px) and (max-width: 1495px) {
     .columns.is-variable.is-4-widescreen-only {
       --columnGap: 1rem; } }
-  @media screen and (min-width: 1408px) {
+  @media screen and (min-width: 1496px) {
     .columns.is-variable.is-4-fullhd {
       --columnGap: 1rem; } }
   .columns.is-variable.is-5 {
@@ -6468,10 +6582,10 @@ label.panel-block {
   @media screen and (min-width: 1216px) {
     .columns.is-variable.is-5-widescreen {
       --columnGap: 1.25rem; } }
-  @media screen and (min-width: 1216px) and (max-width: 1407px) {
+  @media screen and (min-width: 1216px) and (max-width: 1495px) {
     .columns.is-variable.is-5-widescreen-only {
       --columnGap: 1.25rem; } }
-  @media screen and (min-width: 1408px) {
+  @media screen and (min-width: 1496px) {
     .columns.is-variable.is-5-fullhd {
       --columnGap: 1.25rem; } }
   .columns.is-variable.is-6 {
@@ -6497,10 +6611,10 @@ label.panel-block {
   @media screen and (min-width: 1216px) {
     .columns.is-variable.is-6-widescreen {
       --columnGap: 1.5rem; } }
-  @media screen and (min-width: 1216px) and (max-width: 1407px) {
+  @media screen and (min-width: 1216px) and (max-width: 1495px) {
     .columns.is-variable.is-6-widescreen-only {
       --columnGap: 1.5rem; } }
-  @media screen and (min-width: 1408px) {
+  @media screen and (min-width: 1496px) {
     .columns.is-variable.is-6-fullhd {
       --columnGap: 1.5rem; } }
   .columns.is-variable.is-7 {
@@ -6526,10 +6640,10 @@ label.panel-block {
   @media screen and (min-width: 1216px) {
     .columns.is-variable.is-7-widescreen {
       --columnGap: 1.75rem; } }
-  @media screen and (min-width: 1216px) and (max-width: 1407px) {
+  @media screen and (min-width: 1216px) and (max-width: 1495px) {
     .columns.is-variable.is-7-widescreen-only {
       --columnGap: 1.75rem; } }
-  @media screen and (min-width: 1408px) {
+  @media screen and (min-width: 1496px) {
     .columns.is-variable.is-7-fullhd {
       --columnGap: 1.75rem; } }
   .columns.is-variable.is-8 {
@@ -6555,10 +6669,10 @@ label.panel-block {
   @media screen and (min-width: 1216px) {
     .columns.is-variable.is-8-widescreen {
       --columnGap: 2rem; } }
-  @media screen and (min-width: 1216px) and (max-width: 1407px) {
+  @media screen and (min-width: 1216px) and (max-width: 1495px) {
     .columns.is-variable.is-8-widescreen-only {
       --columnGap: 2rem; } }
-  @media screen and (min-width: 1408px) {
+  @media screen and (min-width: 1496px) {
     .columns.is-variable.is-8-fullhd {
       --columnGap: 2rem; } }
 
@@ -7156,7 +7270,7 @@ label.panel-block {
     padding-top: 3rem; }
     @media screen and (min-width: 1024px) {
       .card-wrapper {
-        padding-left: 4.5rem; } }
+        padding-left: 3.5rem; } }
   .card-button {
     text-transform: uppercase;
     font-weight: 700;
@@ -7167,7 +7281,7 @@ label.panel-block {
     text-align: left;
     font-family: "Montserrat";
     font-size: 34px;
-    max-width: 340px;
+    max-width: 380px;
     font-weight: 900;
     position: relative;
     top: -3rem;
@@ -7205,6 +7319,18 @@ label.panel-block {
 
 .fixz {
   z-index: 105; }
+
+::-webkit-input-placeholder {
+  font-style: italic; }
+
+::-moz-placeholder {
+  font-style: italic; }
+
+:-ms-input-placeholder {
+  font-style: italic; }
+
+:-moz-placeholder {
+  font-style: italic; }
 
 .hero .title {
   max-width: 530px; }
@@ -7262,6 +7388,24 @@ label.panel-block {
 #instagram strong {
   font-weight: 700; }
 
+#video .spine-image {
+  width: 150px;
+  top: -20rem;
+  left: 20rem;
+  position: absolute; }
+
+@media screen and (min-width: 1216px) {
+  #video.home-video {
+    margin-bottom: 100px; } }
+
+@media screen and (min-width: 1024px) and (max-width: 1215px) {
+  #video .spine-image {
+    display: none; } }
+
+@media screen and (max-width: 1023px) {
+  #video .spine-image {
+    display: none; } }
+
 @media screen and (min-width: 1024px) {
   #focuses .title span {
     display: block; } }
@@ -7283,6 +7427,10 @@ label.panel-block {
     margin-bottom: 20px; }
   #footer a:hover {
     color: white; }
+
+@media screen and (max-width: 1023px) {
+  #booking-section .subtitled > span {
+    font-size: 45px; } }
 
 a {
   transition: all 0.15s ease-in-out; }
@@ -7319,7 +7467,7 @@ h6 {
     padding-left: 1.5rem; }
   @media screen and (max-width: 1023px) {
     .navbar-end {
-      padding-bottom: .75rem; }
+      padding-bottom: 0.75rem; }
     .navbar-item {
       padding-right: 1.5rem; } }
 
@@ -7423,3 +7571,24 @@ img.logo {
 
 .navbar-burger {
   margin-right: 1rem; }
+
+.field-label {
+  text-align: left;
+  margin-bottom: 16px; }
+
+.hours .item {
+  display: flex; }
+  .hours .item .day {
+    width: 100px; }
+  .hours .item .day,
+  .hours .item .hour {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 24px; }
+  .hours .item .hour {
+    color: #3fc1c9; }
+
+select {
+  background-repeat: no-repeat;
+  background-position: calc(100% - 25px) center;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='DarkTurquoise' width='36' height='36' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>"); }

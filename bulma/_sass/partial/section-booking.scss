@@ -1,0 +1,7 @@
+#booking-section {
+    @include touch {
+        .subtitled > span {
+            font-size: 45px;
+        }
+    }
+}
