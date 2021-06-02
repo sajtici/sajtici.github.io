@@ -1,0 +1,43 @@
+.has-text-center {
+  text-align: center;
+}
+
+.has-text-left {
+  text-align: left;
+}
+
+.mb-1rem {
+  margin-bottom: 1rem;
+}
+
+.mb-6rem {
+  margin-bottom: 6rem;
+}
+
+.has-text-orange {
+  color: $orange;
+}
+
+.has-text-white {
+  color: $white;
+}
+
+.has-orange-border {
+  border: 1px solid $orange;
+}
+
+.has-text-right {
+  text-align: right;
+}
+
+.margin-0 {
+  margin: 0 !important;
+}
+
+.is-relative {
+  position: relative !important;
+}
+
+.z-index {
+  z-index: -999;
+}

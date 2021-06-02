@@ -1,0 +1,38 @@
+.button {
+  padding: 0.6em 1.25em;
+  background-color: $primary;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  color: $white;
+  font-weight: bold;
+  display: inline-flex;
+  &.is-secondary {
+    background: linear-gradient(180deg, #ffffff 0%, #e4e4e4 100%);
+    color: $black;
+  }
+}
+
+.card {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 0.1875rem solid $primary;
+  box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  margin: auto;
+}
+
+.card-image {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select {
+  border-radius: 3px;
+  background-color: #eeeeee;
+}

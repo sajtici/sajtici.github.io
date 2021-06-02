@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="global.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <title>Attendo</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </head>
+
+  <body id="top">
+    <header class="navbar is-fixed-top">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item margin-0" href="#top">
+            <img src="assets/attendo logo.svg" alt="attendo logo" />
+          </a>
+          <span
+            id="open-menu"
+            class="navbar-burger"
+            data-target="navbarMenuHeroC"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+
+        <div id="navbarMenuHeroC" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item is-active" href="#home">Početna</a>
+            <a class="navbar-item" href="#services"> Naše usluge </a>
+            <a class="navbar-item" href="#price-section"> Cjenovnik </a>
+            <a class="navbar-item" href="#clients-section"> Klijenti </a>
+            <a class="navbar-item" href="#contact-section"> Kontakt </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="home" class="hero is-fullheight">
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container">
+          <div class="content">
+            <h1 class="title is-1" data-aos="fade-down">
+              Bolji način evidencije
+            </h1>
+            <div>
+              <h5
+                class="title is-5 has-text-left mb-1rem home-subtitle"
+                data-aos="fade"
+              >
+                Sistem elektronske evidencije radnog vremena i kontrole
+                pristupa. Iskoristite više vremena za Vaš posao a manje za brigu
+                o evidenciji radnog vremena.
+              </h5>
+              <a
+                href="#contact-section"
+                class="button is-primary"
+                data-aos="fade-left"
+                >Saznajte više</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="assets/illustration.svg"
+            alt="home page ilustration"
+            data-aos="fade-in"
+            data-aos-offset="-100"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="services" class="section">
+      <div class="container">
+        <div class="gap">
+          <h2 class="title is-2 has-text-center" data-aos="fade-down">
+            Olakšajte administraciju
+          </h2>
+          <div class="responsive">
+            <div class="item">
+              <div class="card" data-aos="fade-up">
+                <div class="card-image">
+                  <img
+                    src="assets/cards-ilustrations/icon-working.svg"
+                    alt="card ilustration"
+                  />
+                </div>
+                <div class="card-text has-text-center">
+                  <h5 class="title is-5">
+                    Evidentirajte radno vrijeme sa bilo kojeg mjesta.
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-image">
+                  <img
+                    src="assets/cards-ilustrations/icon-report.svg"
+                    alt="card ilustration"
+                  />
+                </div>
+                <div class="card-text has-text-center">
+                  <h5 class="title is-5">
+                    Kreirajte izvještaje na klik, kad god to želite.
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-image">
+                  <img
+                    src="assets/cards-ilustrations/icon-employees.svg"
+                    alt="card ilustration"
+                  />
+                </div>
+                <div class="card-text has-text-center">
+                  <h5 class="title is-5">
+                    Odgovornost o evidenciji svedite na svakog uposlenog,
+                    pojedinačno.
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="title is-2 has-text-center" data-aos="fade-up">
+          Evidentirajte radno vrijeme
+        </h2>
+        <div class="responsive">
+          <div class="item">
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-image">
+                <img
+                  src="assets/cards-ilustrations/icon-phone.svg"
+                  alt="card ilustration"
+                />
+              </div>
+              <div class="card-text has-text-center">
+                <h5 class="title is-5">Na terenu.</h5>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-image">
+                <img
+                  src="assets/cards-ilustrations/icon-terminal.svg"
+                  alt="card ilustration"
+                />
+              </div>
+              <div class="card-text has-text-center">
+                <h5 class="title is-5">U kancelariji.</h5>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card" data-aos="fade-up" data-aos-delay="0">
+              <div class="card-image">
+                <img
+                  src="assets/cards-ilustrations/icon-desktop.svg"
+                  alt="card ilustration"
+                />
+              </div>
+              <div class="card-text has-text-center">
+                <h5 class="title is-5">Na internetu.</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="price-section" class="section">
+      <div class="container">
+        <h2 class="title is-2 has-text-center" data-aos="fade-down">
+          Cijene mjesečnog održavanja
+        </h2>
+        <div
+          class="columns is-multiline columns is-vcentered is-centered"
+          data-aos="fade-up"
+        >
+          <div class="column is-5 table-column">
+            <div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="title is-5 has-orange-border">Broj uposlenih</th>
+                    <th class="title is-5 has-orange-border">
+                      Mjesečno održavanje
+                    </th>
+                    <tbody>
+                      <tr>
+                        <td class="title is-5 has-text-orange">10</td>
+                        <td class="title is-5 has-text-orange">Besplatno</td>
+                      </tr>
+                      <tr>
+                        <td>20</td>
+                        <td>20 KM</td>
+                      </tr>
+                      <tr>
+                        <td>50</td>
+                        <td>40 KM</td>
+                      </tr>
+                      <tr>
+                        <td>100</td>
+                        <td>60 KM</td>
+                      </tr>
+                      <tr>
+                        <td>200</td>
+                        <td>110 KM</td>
+                      </tr>
+                    </tbody>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+
+          <div class="column is-12-touch text-column">
+            <div>
+              <h2 class="title is-3 text">
+                <div style="max-width: 540px">
+                  Imate preko 200 uposlenih?
+                  <br />
+                  Molimo Vas da nam se javite kako bi napravili posebnu ponudu
+                  za Vas.
+                </div>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="clients-section" class="section">
+      <div class="container">
+        <h2 class="title is-2 has-text-center" data-aos="zoom-in">
+          Klijenti koji nam vjeruju
+        </h2>
+        <div class="columns is-mobile is-multiline">
+          <div class="column is-3-desktop is-4-touch">
+            <div class="client-card" data-aos="fade-up">
+              <div class="client-logo">
+                <img src="assets/clients/autoceste 1.svg" alt="client logo" />
+              </div>
+              <div class="client-name">JP Autoceste FBiH</div>
+            </div>
+          </div>
+
+          <div class="column is-3-desktop is-4-touch">
+            <div class="client-card" data-aos="fade-up">
+              <div class="client-logo">
+                <img src="assets/clients/hano 1.svg" alt="client logo" />
+              </div>
+              <div class="client-name">HANO d.o.o. Sarajevo</div>
+            </div>
+          </div>
+
+          <div class="column is-3-desktop is-4-touch">
+            <div class="client-card" data-aos="fade-up">
+              <div class="client-logo">
+                <img
+                  src="assets/clients/logo_asa_group 1.svg"
+                  alt="client logo"
+                />
+              </div>
+              <div class="client-name">ASA Group</div>
+            </div>
+          </div>
+
+          <div class="column is-3-desktop is-4-touch">
+            <div class="client-card" data-aos="fade-up">
+              <div class="client-logo">
+                <img src="assets/clients/SIPA 1.svg" alt="client logo" />
+              </div>
+              <div class="client-name">
+                SIPA - Državna agencija za istrage i zaštitu
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-3-desktop is-4-touch">
+            <div class="client-card" data-aos="fade-up">
+              <div class="client-logo">
+                <img src="assets/clients/logo_shadow 1.jpg" alt="client logo" />
+              </div>
+              <div class="client-name">inMotion</div>
+            </div>
+          </div>
+
+          <div class="column is-3-desktop is-4-touch">
+            <div class="client-card" data-aos="fade-up">
+              <div class="client-logo">
+                <img src="assets/clients/unicredit 1.svg" alt="client logo" />
+              </div>
+              <div class="client-name">UniCredit Bank</div>
+            </div>
+          </div>
+
+          <div class="column is-3-desktop is-4-touch">
+            <div class="client-card" data-aos="fade-up">
+              <div class="client-logo">
+                <img src="assets/clients/layer1.svg" alt="client logo" />
+              </div>
+              <div class="client-name">Prevent Group</div>
+            </div>
+          </div>
+
+          <div class="column is-3-desktop is-4-touch">
+            <div class="client-card" data-aos="fade-up">
+              <div class="client-logo">
+                <img src="assets/clients/wurth 1.svg" alt="client logo" />
+              </div>
+              <div class="client-name">Wurth BH d.o.o.</div>
+            </div>
+          </div>
+
+          <div class="column is-3-desktop is-4-touch">
+            <div class="client-card" data-aos="fade-up">
+              <div class="client-logo">
+                <img src="assets/clients/nabil 1.svg" alt="client logo" />
+              </div>
+              <div class="client-name">Poliklinika DR. NABIL</div>
+            </div>
+          </div>
+
+          <div class="column is-3-desktop is-4-touch">
+            <div class="client-card" data-aos="fade-up">
+              <div class="client-logo">
+                <img src="assets/clients/ramaglas 1.svg" alt="client logo" />
+              </div>
+              <div class="client-name">RAMA-GLAS</div>
+            </div>
+          </div>
+
+          <div class="column is-3-desktop is-4-touch">
+            <div class="client-card" data-aos="fade-up">
+              <div class="client-logo">
+                <img src="assets/clients/mibo-logo 1.svg" alt="client logo" />
+              </div>
+              <div class="client-name">MIBO Komunikacije</div>
+            </div>
+          </div>
+
+          <div class="column is-3-desktop is-4-touch">
+            <div class="client-card" data-aos="fade-up">
+              <div class="client-logo">
+                <img src="assets/clients/zrak logo 1.svg" alt="client logo" />
+              </div>
+              <div class="client-name">Zrak d.d.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg" id="contact-section">
+      <img src="./assets/background-form.svg" />
+      <div class="is-relative">
+        <!-- <div class="section">
+          <div class="thankyou-page">
+            <img src="assets/icon-checkmark.svg" alt="checkmark" />
+            <p class="message"></p>
+            <p class="thanks">Hvala Vam!</p>
+            <p>
+              Vaš upit je uspješno poslan. Odgovorit ćemo Vam u najkraćem
+              mogućem roku.
+            </p>
+          </div>
+        </div> -->
+        <div class="section" data-aos="zoom-in-down" data-aos-offset="200">
+          <div class="container thankyou-container d-none">
+            <div class="thankyou">
+              <img src="assets/icon-checkmark.svg" alt="checkmark" />
+              <p class="message"></p>
+              <p class="thanks">Hvala Vam!</p>
+              <p>
+                Vaš upit je uspješno poslan. Odgovorit ćemo Vam u najkraćem
+                mogućem roku.
+              </p>
+            </div>
+          </div>
+          <div class="container form-container">
+            <h2 class="title is-2 has-text-center">Zatražite svoju ponudu</h2>
+
+            <form class="form" onsubmit="return formSubmit(event)">
+              <div class="columns is-multiline">
+                <div class="column is-6 is-offset-3">
+                  <div class="field">
+                    <label class="label">Ime i prezime</label>
+                    <div class="control">
+                      <input
+                        class="input"
+                        type="text"
+                        placeholder="Vaše ime i prezime"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column is-6 is-offset-3">
+                  <label class="label">Kontakt broj</label>
+                  <div class="field has-addons">
+                    <p class="control">
+                      <span class="select">
+                        <select>
+                          <option>+387</option>
+                          <option>+385</option>
+                          <option>+384</option>
+                        </select>
+                      </span>
+                    </p>
+                    <p class="control is-expanded">
+                      <input
+                        class="input"
+                        type="text"
+                        placeholder="Vaš kontakt broj"
+                      />
+                    </p>
+                  </div>
+                </div>
+
+                <div class="column is-6 is-offset-3">
+                  <div class="field">
+                    <label class="label">E-mail</label>
+                    <div class="control">
+                      <input
+                        class="input"
+                        type="email"
+                        placeholder="Vaša e-mail adresa"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column is-6 is-offset-3">
+                  <div class="field">
+                    <label class="label">Naziv kompanije</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Naziv" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column is-6 is-offset-3">
+                  <div class="field">
+                    <label class="label">Broj uposlenih</label>
+                    <div class="control">
+                      <input
+                        class="input"
+                        type="number"
+                        placeholder="npr. 20"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column is-6 is-offset-3 has-text-right">
+                  <div class="control">
+                    <button class="button is-secondary">
+                      Zatražite ponudu
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8-desktop is-12-touch">
+            <div class="columns">
+              <div class="column">
+                <div class="footer__logo">
+                  <a href="/">
+                    <img src="assets/attendo logo.svg" alt="attendo logo" />
+                  </a>
+                </div>
+              </div>
+              <div class="column has-text-center">
+                <div class="social-icons">
+                  <a
+                    class="social-icon"
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    ><img
+                      src="assets/social-icons/facebook.svg"
+                      alt="facebook icon"
+                  /></a>
+                  <a
+                    class="social-icon"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    ><img
+                      src="assets/social-icons/instagram.svg"
+                      alt="instagram icon"
+                  /></a>
+                  <a
+                    class="social-icon"
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    ><img
+                      src="assets/social-icons/linkedin.svg"
+                      alt="linkedin icon"
+                  /></a>
+                </div>
+              </div>
+              <div class="column is-6">
+                <div class="contact-info">
+                  <p>Braće Begić 48</p>
+                  <p>71000 Sarajevo</p>
+                  <p>Bosna i Hercegovina</p>
+                  <p>Tel: +387 33 788 236</p>
+                  <p>info@attendo.ba</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

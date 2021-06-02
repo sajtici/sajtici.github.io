@@ -1,0 +1,15 @@
+{
+  "name": "attendo",
+  "version": "1.0.0",
+  "description": "Attendo Web Page",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "live-server & node-sass -w ./styles/ -o ./ --recursive"
+  },
+  "devDependencies": {
+    "bulma": "^0.9.2",
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.0"
+  }
+}

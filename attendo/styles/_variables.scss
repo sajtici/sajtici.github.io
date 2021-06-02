@@ -1,0 +1,42 @@
+$black: #000;
+$primary: #ff0000;
+$orange: rgba(255, 163, 54, 0.5);
+$navbar-z: 0;
+$text-strong: $black;
+$text: $black;
+
+$body-family: "Open Sans", sans-serif;
+
+$navbar-item-color: $black;
+$navbar-item-hover-color: $black;
+$navbar-burger-color: $primary;
+$navbar-tab-active-border-bottom-color: $primary;
+$navbar-background: transparent;
+$navbar-item: transparent;
+$navbar-height: 4.5rem;
+//fix for import forms
+$select-colors: "";
+
+$link: $primary;
+
+/* NAVBAR */
+$navbar-item-color: $black;
+$navbar-item-hover-background-color: transparent;
+$navbar-item-active-color: $black;
+$navbar-burger-color: $primary;
+$navbar-tab-hover-border-bottom-color: $primary;
+
+/* FORMS */
+
+$input-arrow: $black;
+$input-hover-color: transparent;
+$input-focus-border-color: transparent;
+$input-shadow: none;
+$input-border-color: transparent;
+$input-hover-border-color: transparent;
+$input-focus-border-color: transparent;
+
+$footer-padding: 3rem 1.5rem;
+$section-padding: 6rem 1.5rem;
+
+$container-max-width: 1170px;

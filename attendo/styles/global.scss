@@ -1,0 +1,367 @@
+@charset "utf-8";
+
+@import "_variables.scss";
+
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/grid/columns.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/footer.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/other.sass";
+
+@import "_utilities.scss";
+@import "_typography.scss";
+@import "_components.scss";
+@import "_carousel.scss";
+@import "sidebar.scss";
+
+@include touch {
+  html {
+    font-size: 12px;
+    margin-top: 40px;
+  }
+
+  .hero.is-fullheight {
+    .hero-body {
+      flex-direction: column;
+    }
+  }
+}
+
+.navbar-item {
+  padding: 0.5rem 1.5rem;
+  font-weight: 400;
+
+  position: relative;
+  &.is-active::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #ff0000;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+  }
+}
+
+.navbar {
+  z-index: 5;
+
+  &-burger span {
+    height: 2px;
+  }
+
+  transition: all 0.1s linear;
+
+  &:not(.moved) {
+    background-color: transparent;
+  }
+}
+
+.home-subtitle {
+  max-width: 580px;
+}
+
+.hero {
+  background-image: url("assets/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include touch {
+    background-position: bottom;
+    background-size: 150%;
+  }
+
+  &-body {
+    position: relative;
+
+    .container {
+      min-height: 600px;
+
+      @include touch {
+        min-height: auto;
+      }
+    }
+  }
+
+  @include desktop {
+    &-image {
+      position: absolute;
+      right: 5rem;
+      bottom: 5rem;
+      pointer-events: none;
+      max-width: 50vw;
+    }
+  }
+}
+
+.section__carousel {
+  text-align: center;
+  &-1 {
+    padding-top: 9rem;
+    padding-bottom: 7rem;
+  }
+  &-2 {
+    padding-top: 7rem;
+    padding-bottom: 9rem;
+  }
+}
+
+#price-section {
+  .table-column {
+    position: relative;
+    z-index: 100;
+  }
+
+  .table {
+    width: 100%;
+    margin: auto;
+    @include touch {
+      position: static;
+      margin: 0 auto;
+      width: 100%;
+    }
+    background-color: $white;
+    z-index: 10;
+    border-collapse: separate;
+    border: solid $primary 3px;
+    border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+    font-size: 1.125rem;
+    th {
+      border-top: none;
+      border-right: none;
+      padding: 0.65rem 1rem;
+    }
+    td {
+      padding: 0.65rem 1rem;
+      border-bottom: 1px solid rgba(238, 238, 238, 0.7);
+      &:nth-child(even) {
+        border-left: 1px solid $orange;
+      }
+    }
+    td:first-child,
+    th:first-child {
+      border-left: none;
+    }
+  }
+  .text-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @include mobile {
+    .title.is-3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .title.text {
+    color: $white;
+    background: linear-gradient(180deg, #ffa336 11.06%, #ff0000 277.88%);
+    border-radius: 0.5rem;
+    padding: 2rem 2.5rem;
+    position: relative;
+    right: 2rem;
+    z-index: -10;
+    margin: 0;
+
+    @include touch {
+      position: static;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2rem 2.5rem;
+      margin-top: -2rem;
+    }
+  }
+  @include touch {
+    #price-section .columns {
+      justify-content: center;
+    }
+  }
+}
+
+#clients-section {
+  .container {
+    max-width: 1000px;
+  }
+
+  .client-card {
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .client-logo {
+      img {
+        width: 105px;
+        height: 80px;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+    .client-name {
+      margin-top: 1rem;
+      text-align: center;
+      font-weight: 300;
+      font-size: 1.125rem;
+    }
+  }
+
+  padding-bottom: 8rem;
+}
+
+#contact-section {
+  input::placeholder {
+    color: #666666;
+  }
+
+  .title {
+    color: $white;
+  }
+  .label {
+    color: white;
+  }
+}
+
+#footer {
+  z-index: 999;
+  background: $white;
+  position: relative;
+
+  @include touch {
+    text-align: center;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 1.125rem;
+
+    p:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  .social-icons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    @include desktop {
+      justify-content: flex-start;
+    }
+    @include mobile {
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+  }
+}
+
+#clients-section {
+  .client-name {
+    max-width: 200px;
+    opacity: 0.7;
+  }
+}
+
+/* THANK  YOU PAGE */
+
+.thankyou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $white;
+  font-size: 1.185rem;
+  font-weight: 400;
+
+  & p {
+    width: 80%;
+  }
+
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 632px;
+
+    @include touch {
+      min-height: 520px;
+    }
+  }
+}
+
+.thanks {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0.625rem 0;
+}
+
+.gap {
+  margin-bottom: 6rem;
+}
+
+.is-clipped {
+  overflow: hidden;
+
+  body {
+    overflow: hidden;
+  }
+}
+
+.bg {
+  position: relative;
+
+  > img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    object-fit: cover;
+
+    height: 1600px;
+
+    @include touch {
+      bottom: 0;
+      height: 1200px;
+    }
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.responsive {
+  &:not(.slick-slider) {
+    display: flex;
+  }
+
+  .item {
+    padding: $gap / 2;
+
+    .card {
+      height: 320px;
+    }
+  }
+
+  .slick-prev {
+    display: none !important;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    right: -10px;
+    top: 49%;
+  }
+}
