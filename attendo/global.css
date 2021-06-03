@@ -4680,6 +4680,15 @@ body.menu-open .real-menu {
   .hero-body {
     padding-top: 6rem; } }
 
+@media (min-width: 2000px) {
+  #contact-section {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+  #footer {
+    margin-bottom: 6rem; } }
+
 .navbar-item {
   padding: 0.5rem 1.5rem;
   font-weight: 400;
@@ -4721,10 +4730,16 @@ body.menu-open .real-menu {
   .hero-body {
     position: relative; }
     .hero-body .container {
-      min-height: 600px; }
+      min-height: 660px; }
+      @media (min-width: 1600px) {
+        .hero-body .container {
+          min-height: 860px; } }
       @media screen and (max-width: 1023px) {
         .hero-body .container {
-          min-height: auto; } }
+          min-height: 90vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; } }
   @media screen and (min-width: 1024px) {
     .hero-image {
       position: absolute;
