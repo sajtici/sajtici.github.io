@@ -411,27 +411,29 @@
           <div class="container form-container">
             <h2 class="title is-2 has-text-center">Zatražite svoju ponudu</h2>
 
-            <form class="form" onsubmit="return formSubmit(event)">
+            <form class="form contact-form" onsubmit="return formSubmit(event)">
               <div class="columns is-multiline">
                 <div class="column is-6 is-offset-3">
                   <div class="field">
-                    <label class="label">Ime i prezime</label>
+                    <label class="label">Ime i prezime *</label>
                     <div class="control">
                       <input
+                        name="name"
                         class="input"
                         type="text"
                         placeholder="Vaše ime i prezime"
+                        required
                       />
                     </div>
                   </div>
                 </div>
 
                 <div class="column is-6 is-offset-3">
-                  <label class="label">Kontakt broj</label>
+                  <label class="label">Kontakt broj *</label>
                   <div class="field has-addons">
                     <p class="control">
                       <span class="select">
-                        <select>
+                        <select name="start_contact">
                           <option>+387</option>
                           <option>+385</option>
                           <option>+384</option>
@@ -443,6 +445,8 @@
                         class="input"
                         type="text"
                         placeholder="Vaš kontakt broj"
+                        name="contact"
+                        required
                       />
                     </p>
                   </div>
@@ -450,12 +454,14 @@
 
                 <div class="column is-6 is-offset-3">
                   <div class="field">
-                    <label class="label">E-mail</label>
+                    <label class="label">E-mail *</label>
                     <div class="control">
                       <input
                         class="input"
                         type="email"
                         placeholder="Vaša e-mail adresa"
+                        required
+                        name="email"
                       />
                     </div>
                   </div>
@@ -463,21 +469,29 @@
 
                 <div class="column is-6 is-offset-3">
                   <div class="field">
-                    <label class="label">Naziv kompanije</label>
+                    <label class="label">Naziv kompanije *</label>
                     <div class="control">
-                      <input class="input" type="text" placeholder="Naziv" />
+                      <input
+                        class="input"
+                        type="text"
+                        placeholder="Naziv"
+                        required
+                        name="company_name"
+                      />
                     </div>
                   </div>
                 </div>
 
                 <div class="column is-6 is-offset-3">
                   <div class="field">
-                    <label class="label">Broj uposlenih</label>
+                    <label class="label">Broj uposlenih *</label>
                     <div class="control">
                       <input
                         class="input"
                         type="number"
                         placeholder="npr. 20"
+                        required
+                        name="employees"
                       />
                     </div>
                   </div>

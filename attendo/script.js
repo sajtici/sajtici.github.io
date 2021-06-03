@@ -31,10 +31,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const element = document.querySelector(item.getAttribute("href"));
 
-      console.log(element);
+      document.querySelector(".navbar-menu").classList.remove("is-active");
+      document.querySelector(".navbar-burger").classList.remove("is-active");
 
       element.scrollIntoView({
         behavior: "smooth",
+        block: "start",
       });
     });
   });
@@ -44,8 +46,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     $("section").each(function () {
       if (
-        $(this).position().top <= $(document).scrollTop() &&
-        $(this).position().top + $(this).outerHeight() > $(document).scrollTop()
+        $(this).position().top - 125 <= $(document).scrollTop() &&
+        $(this).position().top - 125 + $(this).outerHeight() >
+          $(document).scrollTop()
       ) {
         $(".navbar-item:not([href='#" + $(this).attr("id") + "'])").removeClass(
           "is-active"
@@ -88,8 +91,32 @@ function handleScrolling() {
   }
 }
 
+$.fn.serializeObject = function () {
+  var o = {};
+  var a = this.serializeArray();
+  $.each(a, function () {
+    if (o[this.name]) {
+      if (!o[this.name].push) {
+        o[this.name] = [o[this.name]];
+      }
+      o[this.name].push(this.value || "");
+    } else {
+      o[this.name] = this.value || "";
+    }
+  });
+  return o;
+};
+
 function formSubmit(e) {
   e.preventDefault();
+
+  const form = $(".contact-form").serializeObject();
+
+  form.id = "cf";
+
+  console.log(form);
+
+  $.post("./actions/mail.php", form);
 
   document.querySelector(".form-container").classList.add("d-none");
   document.querySelector(".thankyou-container").classList.remove("d-none");
