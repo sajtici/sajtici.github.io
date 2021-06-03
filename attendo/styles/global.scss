@@ -33,6 +33,12 @@
   }
 }
 
+@include desktop {
+  .hero-body {
+    padding-top: 6rem;
+  }
+}
+
 .navbar-item {
   padding: 0.5rem 1.5rem;
   font-weight: 400;
@@ -99,8 +105,8 @@
   @include desktop {
     &-image {
       position: absolute;
-      right: 5rem;
-      bottom: 5rem;
+      right: 5%;
+      bottom: 5%;
       pointer-events: none;
       max-width: 50vw;
     }

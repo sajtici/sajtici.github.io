@@ -4676,6 +4676,10 @@ body.menu-open .real-menu {
   .hero.is-fullheight .hero-body {
     flex-direction: column; } }
 
+@media screen and (min-width: 1024px) {
+  .hero-body {
+    padding-top: 6rem; } }
+
 .navbar-item {
   padding: 0.5rem 1.5rem;
   font-weight: 400;
@@ -4724,8 +4728,8 @@ body.menu-open .real-menu {
   @media screen and (min-width: 1024px) {
     .hero-image {
       position: absolute;
-      right: 5rem;
-      bottom: 5rem;
+      right: 5%;
+      bottom: 5%;
       pointer-events: none;
       max-width: 50vw; } }
 
