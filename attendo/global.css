@@ -4674,7 +4674,10 @@ body.menu-open .real-menu {
     font-size: 12px;
     margin-top: 40px; }
   .hero.is-fullheight .hero-body {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .hero.is-fullheight {
+    min-height: 600px;
+    height: 600px; } }
 
 @media screen and (min-width: 1024px) {
   .hero-body {
@@ -4730,20 +4733,19 @@ body.menu-open .real-menu {
   .hero-body {
     position: relative; }
     .hero-body .container {
-      min-height: 660px; }
+      min-height: 500px; }
       @media (min-width: 1600px) {
         .hero-body .container {
           min-height: 860px; } }
       @media screen and (max-width: 1023px) {
         .hero-body .container {
-          min-height: 90vh;
           display: flex;
           flex-direction: column;
           justify-content: space-between; } }
   @media screen and (min-width: 1024px) {
     .hero-image {
       position: absolute;
-      right: 5%;
+      right: 0;
       bottom: 5%;
       pointer-events: none;
       max-width: 50vw; } }
@@ -4871,6 +4873,11 @@ body.menu-open .real-menu {
     #footer .social-icons .social-icon {
       margin-left: 0.75rem;
       margin-right: 0.75rem; }
+      #footer .social-icons .social-icon .fillable {
+        transition: all 0.1s linear;
+        fill: #000; }
+      #footer .social-icons .social-icon:hover .fillable {
+        fill: #ff0000 !important; }
     @media screen and (min-width: 1024px) {
       #footer .social-icons {
         justify-content: flex-start; } }
@@ -4927,6 +4934,7 @@ body.menu-open .real-menu {
     bottom: 0;
     width: 100%;
     object-fit: cover;
+    z-index: -1;
     height: 1600px; }
     @media screen and (max-width: 1023px) {
       .bg > img {

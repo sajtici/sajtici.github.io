@@ -31,6 +31,11 @@
       flex-direction: column;
     }
   }
+
+  .hero.is-fullheight {
+    min-height: 600px;
+    height: 600px;
+  }
 }
 
 @include desktop {
@@ -108,14 +113,13 @@
     position: relative;
 
     .container {
-      min-height: 660px;
+      min-height: 500px;
 
       @media (min-width: 1600px) {
         min-height: 860px;
       }
 
       @include touch {
-        min-height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -126,7 +130,7 @@
   @include desktop {
     &-image {
       position: absolute;
-      right: 5%;
+      right: 0;
       bottom: 5%;
       pointer-events: none;
 
@@ -289,6 +293,14 @@
     .social-icon {
       margin-left: 0.75rem;
       margin-right: 0.75rem;
+
+      .fillable {
+        transition: all 0.1s linear;
+        fill: #000;
+      }
+      &:hover .fillable {
+        fill: $primary !important;
+      }
     }
     justify-content: center;
     @include desktop {
@@ -365,6 +377,7 @@
     bottom: 0;
     width: 100%;
     object-fit: cover;
+    z-index: -1;
 
     height: 1600px;
 
